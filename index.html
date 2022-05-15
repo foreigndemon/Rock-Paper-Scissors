@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- score window -->
+        <header class="score-header">
+            <img class="logo" src="./assests/logo.svg" alt="logo-navbar">
+            <div class="score-display">
+                <p class="score-display-heading">score</p>
+                <h2 class="score-display-score">0</h2>
+            </div>
+        </header>
+        
+        <!-- game windows one -->
+        <section class="game-window-one">
+            <button class="choice-btn" data-choice="rock">
+                <div class="choice rock">
+                    <img src="./assests/icon-rock.svg" alt="rock">
+                </div>
+            <button class="choice-btn" data-choice="paper">
+                <div class="choice paper">
+                    <img src="./assests/icon-paper.svg" alt="paper">
+                </div>
+            </button>
+            </button>
+            <button class="choice-btn" data-choice="scissors">
+                <div class="choice scissors">
+                    <img src="./assests/icon-scissors.svg" alt="scissors">
+                </div>
+            </button>
+        </section>
+  
+        <div class="game-result-one hidden">
+            <h2 class="result-heading">you picked</h2>
+            <h2 class="result-heading">cpu picked</h2>
+            <div class="result-result"></div>
+
+            <div class="results-winner hidden">
+                <h3 class="results-text"></h2>
+                <button class="play-again">play again!</button>
+            </div>
+
+            <div class="result-result"></div>
+        </div>
+
+        <button class="game-rules choice-btn" tabindex="1">Rules</button>
+        <div class="model">
+            <div class="model-container">
+                <header class="model-header">
+                    <h2 class="model-heading">Rules</h2>
+                    <button class="close-btn choice-btn">
+                        <img class="close" src="./assests/icon-close.svg" alt="close-svg">
+                    </button>
+                </header>
+                <img src="./assests/image-rules.svg" alt="rules-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
